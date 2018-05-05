@@ -116,18 +116,19 @@ $('body').click(function(e) {
                     <a href="{{ route('tasks.create')}}" class="list-group-item childlist">{{ __('New Task') }}</a>
                 @endif
             </div>
-
+-->
             <a href="#user" class=" list-group-item" data-toggle="collapse" data-parent="#MainMenu"><i
-                        class="sidebar-icon fa fa-users"></i><span id="menu-txt">{{ __('Users') }}</span>
+                        class="sidebar-icon fa fa-users"></i><span id="menu-txt">{{ __('Nhân viên') }}</span>
             <i class="ion-chevron-up  arrow-up sidebar-arrow"></i></a>
             <div class="collapse" id="user">
-                <a href="{{ route('users.index')}}" class="list-group-item childlist">{{ __('Users All') }}</a>
+                <a href="{{ route('users.index')}}" class="list-group-item childlist">{{ __('Tất cả') }}</a>
                 @if(Entrust::can('user-create'))
                     <a href="{{ route('users.create')}}"
-                       class="list-group-item childlist">{{ __('New User') }}</a>
+                       class="list-group-item childlist">{{ __('Tạo mới') }}</a>
                 @endif
             </div>
 
+<!--
             <a href="#leads" class=" list-group-item" data-toggle="collapse" data-parent="#MainMenu"><i
                         class="glyphicon sidebar-icon glyphicon-hourglass"></i><span id="menu-txt">{{ __('Leads') }}</span>
             <i class="ion-chevron-up  arrow-up sidebar-arrow"></i></a>
